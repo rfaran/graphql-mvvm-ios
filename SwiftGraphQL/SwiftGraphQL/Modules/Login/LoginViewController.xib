@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="SeekMax" customModuleProvider="target">
+            <connections>
+                <outlet property="loadingIndicator" destination="qqq-zY-zPC" id="7qa-MU-Mma"/>
+                <outlet property="loginButton" destination="JMB-HM-QkR" id="dz0-LC-zuq"/>
+                <outlet property="passwordTextField" destination="3MU-c0-bI7" id="dxu-HM-dML"/>
+                <outlet property="usernameTextField" destination="BJd-19-5Tw" id="fOB-NJ-5QM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seek-logo" translatesAutoresizingMaskIntoConstraints="NO" id="kRP-IA-iA8">
+                    <rect key="frame" x="-567" y="139" width="1527" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="7Ye-BJ-5u9"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XSL-pR-K9A">
+                    <rect key="frame" x="40" y="279" width="313" height="185"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BJd-19-5Tw">
+                            <rect key="frame" x="0.0" y="0.0" width="313" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3MU-c0-bI7">
+                            <rect key="frame" x="0.0" y="54" width="313" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hXd-Sh-Kyx">
+                            <rect key="frame" x="0.0" y="108" width="313" height="77"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMB-HM-QkR">
+                                    <rect key="frame" x="0.0" y="0.0" width="313" height="40"/>
+                                    <color key="backgroundColor" name="button"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="4Yv-H5-2uf"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Login">
+                                        <color key="titleColor" name="textReversed"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="loginButtonTapped" destination="-1" eventType="touchUpInside" id="wWi-NU-3EG"/>
+                                    </connections>
+                                </button>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="qqq-zY-zPC">
+                                    <rect key="frame" x="0.0" y="40" width="313" height="37"/>
+                                </activityIndicatorView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XSL-pR-K9A" secondAttribute="trailing" constant="40" id="0NL-Gx-sok"/>
+                <constraint firstItem="XSL-pR-K9A" firstAttribute="top" secondItem="kRP-IA-iA8" secondAttribute="bottom" constant="40" id="AnK-lv-SPy"/>
+                <constraint firstItem="kRP-IA-iA8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="d29-lV-ngU"/>
+                <constraint firstItem="XSL-pR-K9A" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="ucj-VW-Ch5"/>
+                <constraint firstItem="kRP-IA-iA8" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="zaM-bZ-Wiz"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="seek-logo" width="1527" height="599"/>
+        <namedColor name="button">
+            <color red="0.15299999713897705" green="0.39599999785423279" blue="0.81199997663497925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textReversed">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

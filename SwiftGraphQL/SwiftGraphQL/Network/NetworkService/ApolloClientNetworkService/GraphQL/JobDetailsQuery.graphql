@@ -1,0 +1,12 @@
+query JobDetailsQuery($jobId: String!) {
+  job(id: $jobId) {
+    _id
+    haveIApplied
+    description
+    positionTitle
+    salaryRange {
+      min
+      max
+    }
+  }
+}

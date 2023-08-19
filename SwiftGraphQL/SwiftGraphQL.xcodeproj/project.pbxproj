@@ -1,0 +1,737 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35977F722A88B533005D9614 /* UIWindow+Extentsion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35977F712A88B533005D9614 /* UIWindow+Extentsion.swift */; };
+		35977F742A88B839005D9614 /* JobDetailsViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35977F732A88B839005D9614 /* JobDetailsViewControllerViewModel.swift */; };
+		35977F772A88B85C005D9614 /* JobDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35977F752A88B85C005D9614 /* JobDetailsViewController.swift */; };
+		35977F782A88B85C005D9614 /* JobDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35977F762A88B85C005D9614 /* JobDetailsViewController.xib */; };
+		35977F7B2A88C04E005D9614 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 35977F7A2A88C04E005D9614 /* Apollo */; };
+		35977F7E2A88C093005D9614 /* ApolloClientNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35977F7D2A88C093005D9614 /* ApolloClientNetworkService.swift */; };
+		35977F812A88C1BF005D9614 /* schema.graphqls in Resources */ = {isa = PBXBuildFile; fileRef = 35977F802A88C1BF005D9614 /* schema.graphqls */; };
+		35977F832A88C1E6005D9614 /* AuthenticateUserMutation.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 35977F822A88C1E6005D9614 /* AuthenticateUserMutation.graphql */; };
+		35977F8A2A88C583005D9614 /* ActiveJobsList.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 35977F892A88C583005D9614 /* ActiveJobsList.graphql */; };
+		35977F8C2A88C90F005D9614 /* JobDetailsQuery.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 35977F8B2A88C90F005D9614 /* JobDetailsQuery.graphql */; };
+		35977F8E2A88C97E005D9614 /* SalaryRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35977F8D2A88C97E005D9614 /* SalaryRange.swift */; };
+		35977F902A88CB28005D9614 /* UserManagementInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35977F8F2A88CB28005D9614 /* UserManagementInterceptor.swift */; };
+		35977F922A88CB8A005D9614 /* NetworkInterceptorsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35977F912A88CB8A005D9614 /* NetworkInterceptorsProvider.swift */; };
+		35977F942A88CD3E005D9614 /* ApplyJobMutation.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 35977F932A88CD3E005D9614 /* ApplyJobMutation.graphql */; };
+		35AB38222A88961D00E628DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB38212A88961D00E628DA /* AppDelegate.swift */; };
+		35AB38242A88961D00E628DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB38232A88961D00E628DA /* SceneDelegate.swift */; };
+		35AB382B2A88961E00E628DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35AB382A2A88961E00E628DA /* Assets.xcassets */; };
+		35AB382E2A88961E00E628DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AB382C2A88961E00E628DA /* LaunchScreen.storyboard */; };
+		35AB38602A88984800E628DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB385E2A88984700E628DA /* LoginViewController.swift */; };
+		35AB38612A88984800E628DA /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35AB385F2A88984700E628DA /* LoginViewController.xib */; };
+		35AB38632A88987700E628DA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB38622A88987700E628DA /* BaseViewController.swift */; };
+		35AB38652A88989E00E628DA /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB38642A88989E00E628DA /* BaseViewModel.swift */; };
+		35AB38672A8898BF00E628DA /* LoginViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB38662A8898BF00E628DA /* LoginViewControllerViewModel.swift */; };
+		35AB386A2A889DD600E628DA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB38692A889DD600E628DA /* NetworkService.swift */; };
+		35AB386C2A889DF000E628DA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB386B2A889DF000E628DA /* NetworkError.swift */; };
+		35AB386E2A889E0F00E628DA /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB386D2A889E0F00E628DA /* MockNetworkService.swift */; };
+		35AB38712A889E6700E628DA /* UserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB38702A889E6700E628DA /* UserProvider.swift */; };
+		35AB38732A889EF700E628DA /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB38722A889EF700E628DA /* AppData.swift */; };
+		35AB38752A889F1F00E628DA /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB38742A889F1E00E628DA /* KeychainHelper.swift */; };
+		35AB38772A889F4B00E628DA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB38762A889F4B00E628DA /* Utilities.swift */; };
+		35AB38792A88A23400E628DA /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB38782A88A23400E628DA /* AppColors.swift */; };
+		35AB387B2A88A6D200E628DA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB387A2A88A6D200E628DA /* UIView+Extension.swift */; };
+		35AB387E2A88A72F00E628DA /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB387D2A88A72F00E628DA /* RootTabBarViewController.swift */; };
+		35AB38802A88A76D00E628DA /* JobsListViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB387F2A88A76D00E628DA /* JobsListViewControllerViewModel.swift */; };
+		35AB38832A88A77A00E628DA /* JobsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB38812A88A77A00E628DA /* JobsListViewController.swift */; };
+		35AB38842A88A77A00E628DA /* JobsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35AB38822A88A77A00E628DA /* JobsListViewController.xib */; };
+		35AB38862A88A81600E628DA /* SearchViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB38852A88A81600E628DA /* SearchViewControllerViewModel.swift */; };
+		35AB38892A88A83A00E628DA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB38872A88A83A00E628DA /* SearchViewController.swift */; };
+		35AB388A2A88A83A00E628DA /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35AB38882A88A83A00E628DA /* SearchViewController.xib */; };
+		35AB388C2A88A8A700E628DA /* ApplicationListViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB388B2A88A8A700E628DA /* ApplicationListViewControllerViewModel.swift */; };
+		35AB388F2A88A8BE00E628DA /* ApplicationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB388D2A88A8BE00E628DA /* ApplicationListViewController.swift */; };
+		35AB38902A88A8BE00E628DA /* ApplicationListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35AB388E2A88A8BE00E628DA /* ApplicationListViewController.xib */; };
+		35AB38922A88A91B00E628DA /* ProfileViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB38912A88A91B00E628DA /* ProfileViewControllerViewModel.swift */; };
+		35AB38952A88A93200E628DA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB38932A88A93200E628DA /* ProfileViewController.swift */; };
+		35AB38962A88A93200E628DA /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35AB38942A88A93200E628DA /* ProfileViewController.xib */; };
+		35AB38992A88ADCA00E628DA /* JobTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB38982A88ADCA00E628DA /* JobTableViewCellViewModel.swift */; };
+		35AB389C2A88ADD900E628DA /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB389A2A88ADD900E628DA /* JobTableViewCell.swift */; };
+		35AB389D2A88ADD900E628DA /* JobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35AB389B2A88ADD900E628DA /* JobTableViewCell.xib */; };
+		35AB38A12A88AE0500E628DA /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB38A02A88AE0500E628DA /* Job.swift */; };
+		35AB38A32A88AE6400E628DA /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AB38A22A88AE6400E628DA /* BaseTableViewCell.swift */; };
+		35D8BB822A9096D000312438 /* SwiftGraphQLAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 35D8BB812A9096D000312438 /* SwiftGraphQLAPI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		35977F712A88B533005D9614 /* UIWindow+Extentsion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extentsion.swift"; sourceTree = "<group>"; };
+		35977F732A88B839005D9614 /* JobDetailsViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsViewControllerViewModel.swift; sourceTree = "<group>"; };
+		35977F752A88B85C005D9614 /* JobDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsViewController.swift; sourceTree = "<group>"; };
+		35977F762A88B85C005D9614 /* JobDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobDetailsViewController.xib; sourceTree = "<group>"; };
+		35977F7D2A88C093005D9614 /* ApolloClientNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloClientNetworkService.swift; sourceTree = "<group>"; };
+		35977F802A88C1BF005D9614 /* schema.graphqls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
+		35977F822A88C1E6005D9614 /* AuthenticateUserMutation.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = AuthenticateUserMutation.graphql; sourceTree = "<group>"; };
+		35977F892A88C583005D9614 /* ActiveJobsList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = ActiveJobsList.graphql; sourceTree = "<group>"; };
+		35977F8B2A88C90F005D9614 /* JobDetailsQuery.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = JobDetailsQuery.graphql; sourceTree = "<group>"; };
+		35977F8D2A88C97E005D9614 /* SalaryRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalaryRange.swift; sourceTree = "<group>"; };
+		35977F8F2A88CB28005D9614 /* UserManagementInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagementInterceptor.swift; sourceTree = "<group>"; };
+		35977F912A88CB8A005D9614 /* NetworkInterceptorsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptorsProvider.swift; sourceTree = "<group>"; };
+		35977F932A88CD3E005D9614 /* ApplyJobMutation.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = ApplyJobMutation.graphql; sourceTree = "<group>"; };
+		35AB381E2A88961D00E628DA /* SwiftGraphQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftGraphQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35AB38212A88961D00E628DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		35AB38232A88961D00E628DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		35AB382A2A88961E00E628DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35AB382D2A88961E00E628DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35AB382F2A88961E00E628DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35AB385E2A88984700E628DA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		35AB385F2A88984700E628DA /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		35AB38622A88987700E628DA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		35AB38642A88989E00E628DA /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		35AB38662A8898BF00E628DA /* LoginViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerViewModel.swift; sourceTree = "<group>"; };
+		35AB38692A889DD600E628DA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		35AB386B2A889DF000E628DA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		35AB386D2A889E0F00E628DA /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		35AB38702A889E6700E628DA /* UserProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProvider.swift; sourceTree = "<group>"; };
+		35AB38722A889EF700E628DA /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		35AB38742A889F1E00E628DA /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		35AB38762A889F4B00E628DA /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		35AB38782A88A23400E628DA /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		35AB387A2A88A6D200E628DA /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		35AB387D2A88A72F00E628DA /* RootTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
+		35AB387F2A88A76D00E628DA /* JobsListViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsListViewControllerViewModel.swift; sourceTree = "<group>"; };
+		35AB38812A88A77A00E628DA /* JobsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsListViewController.swift; sourceTree = "<group>"; };
+		35AB38822A88A77A00E628DA /* JobsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobsListViewController.xib; sourceTree = "<group>"; };
+		35AB38852A88A81600E628DA /* SearchViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerViewModel.swift; sourceTree = "<group>"; };
+		35AB38872A88A83A00E628DA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		35AB38882A88A83A00E628DA /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		35AB388B2A88A8A700E628DA /* ApplicationListViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationListViewControllerViewModel.swift; sourceTree = "<group>"; };
+		35AB388D2A88A8BE00E628DA /* ApplicationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationListViewController.swift; sourceTree = "<group>"; };
+		35AB388E2A88A8BE00E628DA /* ApplicationListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ApplicationListViewController.xib; sourceTree = "<group>"; };
+		35AB38912A88A91B00E628DA /* ProfileViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerViewModel.swift; sourceTree = "<group>"; };
+		35AB38932A88A93200E628DA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		35AB38942A88A93200E628DA /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		35AB38982A88ADCA00E628DA /* JobTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		35AB389A2A88ADD900E628DA /* JobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
+		35AB389B2A88ADD900E628DA /* JobTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobTableViewCell.xib; sourceTree = "<group>"; };
+		35AB38A02A88AE0500E628DA /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		35AB38A22A88AE6400E628DA /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		35D8BB802A9096BC00312438 /* SwiftGraphQLAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SwiftGraphQLAPI; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35AB381B2A88961D00E628DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35977F7B2A88C04E005D9614 /* Apollo in Frameworks */,
+				35D8BB822A9096D000312438 /* SwiftGraphQLAPI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35977F7C2A88C087005D9614 /* ApolloClientNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				35977F7F2A88C19C005D9614 /* GraphQL */,
+				35977F7D2A88C093005D9614 /* ApolloClientNetworkService.swift */,
+				35977F8F2A88CB28005D9614 /* UserManagementInterceptor.swift */,
+				35977F912A88CB8A005D9614 /* NetworkInterceptorsProvider.swift */,
+			);
+			path = ApolloClientNetworkService;
+			sourceTree = "<group>";
+		};
+		35977F7F2A88C19C005D9614 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				35977F802A88C1BF005D9614 /* schema.graphqls */,
+				35977F822A88C1E6005D9614 /* AuthenticateUserMutation.graphql */,
+				35977F892A88C583005D9614 /* ActiveJobsList.graphql */,
+				35977F8B2A88C90F005D9614 /* JobDetailsQuery.graphql */,
+				35977F932A88CD3E005D9614 /* ApplyJobMutation.graphql */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		35977F842A88C2A3005D9614 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				35D8BB802A9096BC00312438 /* SwiftGraphQLAPI */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		35977F862A88C33A005D9614 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35AB38152A88961C00E628DA = {
+			isa = PBXGroup;
+			children = (
+				35977F842A88C2A3005D9614 /* Packages */,
+				35AB38202A88961D00E628DA /* SwiftGraphQL */,
+				35AB381F2A88961D00E628DA /* Products */,
+				35977F862A88C33A005D9614 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		35AB381F2A88961D00E628DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35AB381E2A88961D00E628DA /* SwiftGraphQL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35AB38202A88961D00E628DA /* SwiftGraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				35AB389E2A88ADF700E628DA /* DomainLayer */,
+				35AB385D2A88972000E628DA /* Network */,
+				35AB385B2A8896FA00E628DA /* Shared */,
+				35AB38512A88964F00E628DA /* Modules */,
+				35AB38212A88961D00E628DA /* AppDelegate.swift */,
+				35AB38232A88961D00E628DA /* SceneDelegate.swift */,
+				35AB382A2A88961E00E628DA /* Assets.xcassets */,
+				35AB382C2A88961E00E628DA /* LaunchScreen.storyboard */,
+				35AB382F2A88961E00E628DA /* Info.plist */,
+			);
+			path = SwiftGraphQL;
+			sourceTree = "<group>";
+		};
+		35AB38512A88964F00E628DA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				35AB387C2A88A72400E628DA /* RootTabBarViewController */,
+				35AB385C2A88971000E628DA /* JobDetails */,
+				35AB38562A8896BB00E628DA /* Profile */,
+				35AB38552A8896A900E628DA /* Search */,
+				35AB38542A8896A100E628DA /* MyApplications */,
+				35AB38532A88969600E628DA /* JobsList */,
+				35AB38522A88969100E628DA /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		35AB38522A88969100E628DA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				35AB385E2A88984700E628DA /* LoginViewController.swift */,
+				35AB385F2A88984700E628DA /* LoginViewController.xib */,
+				35AB38662A8898BF00E628DA /* LoginViewControllerViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		35AB38532A88969600E628DA /* JobsList */ = {
+			isa = PBXGroup;
+			children = (
+				35AB38972A88ADC200E628DA /* JobTableViewCell */,
+				35AB387F2A88A76D00E628DA /* JobsListViewControllerViewModel.swift */,
+				35AB38812A88A77A00E628DA /* JobsListViewController.swift */,
+				35AB38822A88A77A00E628DA /* JobsListViewController.xib */,
+			);
+			path = JobsList;
+			sourceTree = "<group>";
+		};
+		35AB38542A8896A100E628DA /* MyApplications */ = {
+			isa = PBXGroup;
+			children = (
+				35AB388B2A88A8A700E628DA /* ApplicationListViewControllerViewModel.swift */,
+				35AB388D2A88A8BE00E628DA /* ApplicationListViewController.swift */,
+				35AB388E2A88A8BE00E628DA /* ApplicationListViewController.xib */,
+			);
+			path = MyApplications;
+			sourceTree = "<group>";
+		};
+		35AB38552A8896A900E628DA /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				35AB38852A88A81600E628DA /* SearchViewControllerViewModel.swift */,
+				35AB38872A88A83A00E628DA /* SearchViewController.swift */,
+				35AB38882A88A83A00E628DA /* SearchViewController.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		35AB38562A8896BB00E628DA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				35AB38912A88A91B00E628DA /* ProfileViewControllerViewModel.swift */,
+				35AB38932A88A93200E628DA /* ProfileViewController.swift */,
+				35AB38942A88A93200E628DA /* ProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		35AB38572A8896C400E628DA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				35AB38722A889EF700E628DA /* AppData.swift */,
+				35AB38742A889F1E00E628DA /* KeychainHelper.swift */,
+				35AB38762A889F4B00E628DA /* Utilities.swift */,
+				35AB38782A88A23400E628DA /* AppColors.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		35AB38582A8896CA00E628DA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				35AB38622A88987700E628DA /* BaseViewController.swift */,
+				35AB38642A88989E00E628DA /* BaseViewModel.swift */,
+				35AB38A22A88AE6400E628DA /* BaseTableViewCell.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		35AB38592A8896D600E628DA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				35AB387A2A88A6D200E628DA /* UIView+Extension.swift */,
+				35977F712A88B533005D9614 /* UIWindow+Extentsion.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		35AB385B2A8896FA00E628DA /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				35AB386F2A889E5800E628DA /* Providers */,
+				35AB38582A8896CA00E628DA /* Base */,
+				35AB38572A8896C400E628DA /* Utilities */,
+				35AB38592A8896D600E628DA /* Extensions */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		35AB385C2A88971000E628DA /* JobDetails */ = {
+			isa = PBXGroup;
+			children = (
+				35977F732A88B839005D9614 /* JobDetailsViewControllerViewModel.swift */,
+				35977F752A88B85C005D9614 /* JobDetailsViewController.swift */,
+				35977F762A88B85C005D9614 /* JobDetailsViewController.xib */,
+			);
+			path = JobDetails;
+			sourceTree = "<group>";
+		};
+		35AB385D2A88972000E628DA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				35AB38682A889DC600E628DA /* NetworkService */,
+				35AB386B2A889DF000E628DA /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		35AB38682A889DC600E628DA /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				35977F7C2A88C087005D9614 /* ApolloClientNetworkService */,
+				35AB38692A889DD600E628DA /* NetworkService.swift */,
+				35AB386D2A889E0F00E628DA /* MockNetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		35AB386F2A889E5800E628DA /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				35AB38702A889E6700E628DA /* UserProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		35AB387C2A88A72400E628DA /* RootTabBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				35AB387D2A88A72F00E628DA /* RootTabBarViewController.swift */,
+			);
+			path = RootTabBarViewController;
+			sourceTree = "<group>";
+		};
+		35AB38972A88ADC200E628DA /* JobTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				35AB38982A88ADCA00E628DA /* JobTableViewCellViewModel.swift */,
+				35AB389A2A88ADD900E628DA /* JobTableViewCell.swift */,
+				35AB389B2A88ADD900E628DA /* JobTableViewCell.xib */,
+			);
+			path = JobTableViewCell;
+			sourceTree = "<group>";
+		};
+		35AB389E2A88ADF700E628DA /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+				35AB389F2A88ADFC00E628DA /* Models */,
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		35AB389F2A88ADFC00E628DA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				35AB38A02A88AE0500E628DA /* Job.swift */,
+				35977F8D2A88C97E005D9614 /* SalaryRange.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35AB381D2A88961D00E628DA /* SwiftGraphQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35AB38482A88961F00E628DA /* Build configuration list for PBXNativeTarget "SwiftGraphQL" */;
+			buildPhases = (
+				35AB381A2A88961D00E628DA /* Sources */,
+				35AB381B2A88961D00E628DA /* Frameworks */,
+				35AB381C2A88961D00E628DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftGraphQL;
+			packageProductDependencies = (
+				35977F7A2A88C04E005D9614 /* Apollo */,
+				35D8BB812A9096D000312438 /* SwiftGraphQLAPI */,
+			);
+			productName = SeekMax;
+			productReference = 35AB381E2A88961D00E628DA /* SwiftGraphQL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35AB38162A88961C00E628DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					35AB381D2A88961D00E628DA = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 35AB38192A88961C00E628DA /* Build configuration list for PBXProject "SwiftGraphQL" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35AB38152A88961C00E628DA;
+			packageReferences = (
+				35977F792A88C04E005D9614 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
+			productRefGroup = 35AB381F2A88961D00E628DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35AB381D2A88961D00E628DA /* SwiftGraphQL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35AB381C2A88961D00E628DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35AB38962A88A93200E628DA /* ProfileViewController.xib in Resources */,
+				35977F8A2A88C583005D9614 /* ActiveJobsList.graphql in Resources */,
+				35AB38842A88A77A00E628DA /* JobsListViewController.xib in Resources */,
+				35AB38612A88984800E628DA /* LoginViewController.xib in Resources */,
+				35AB389D2A88ADD900E628DA /* JobTableViewCell.xib in Resources */,
+				35977F782A88B85C005D9614 /* JobDetailsViewController.xib in Resources */,
+				35AB382E2A88961E00E628DA /* LaunchScreen.storyboard in Resources */,
+				35977F832A88C1E6005D9614 /* AuthenticateUserMutation.graphql in Resources */,
+				35977F812A88C1BF005D9614 /* schema.graphqls in Resources */,
+				35AB388A2A88A83A00E628DA /* SearchViewController.xib in Resources */,
+				35AB382B2A88961E00E628DA /* Assets.xcassets in Resources */,
+				35977F942A88CD3E005D9614 /* ApplyJobMutation.graphql in Resources */,
+				35977F8C2A88C90F005D9614 /* JobDetailsQuery.graphql in Resources */,
+				35AB38902A88A8BE00E628DA /* ApplicationListViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35AB381A2A88961D00E628DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35AB38632A88987700E628DA /* BaseViewController.swift in Sources */,
+				35AB38922A88A91B00E628DA /* ProfileViewControllerViewModel.swift in Sources */,
+				35977F772A88B85C005D9614 /* JobDetailsViewController.swift in Sources */,
+				35AB38862A88A81600E628DA /* SearchViewControllerViewModel.swift in Sources */,
+				35AB38712A889E6700E628DA /* UserProvider.swift in Sources */,
+				35977F902A88CB28005D9614 /* UserManagementInterceptor.swift in Sources */,
+				35AB38772A889F4B00E628DA /* Utilities.swift in Sources */,
+				35AB387B2A88A6D200E628DA /* UIView+Extension.swift in Sources */,
+				35AB38952A88A93200E628DA /* ProfileViewController.swift in Sources */,
+				35AB389C2A88ADD900E628DA /* JobTableViewCell.swift in Sources */,
+				35AB38602A88984800E628DA /* LoginViewController.swift in Sources */,
+				35AB38A32A88AE6400E628DA /* BaseTableViewCell.swift in Sources */,
+				35977F722A88B533005D9614 /* UIWindow+Extentsion.swift in Sources */,
+				35AB386E2A889E0F00E628DA /* MockNetworkService.swift in Sources */,
+				35977F742A88B839005D9614 /* JobDetailsViewControllerViewModel.swift in Sources */,
+				35AB386A2A889DD600E628DA /* NetworkService.swift in Sources */,
+				35AB38222A88961D00E628DA /* AppDelegate.swift in Sources */,
+				35977F922A88CB8A005D9614 /* NetworkInterceptorsProvider.swift in Sources */,
+				35AB388F2A88A8BE00E628DA /* ApplicationListViewController.swift in Sources */,
+				35AB387E2A88A72F00E628DA /* RootTabBarViewController.swift in Sources */,
+				35AB38892A88A83A00E628DA /* SearchViewController.swift in Sources */,
+				35AB38672A8898BF00E628DA /* LoginViewControllerViewModel.swift in Sources */,
+				35AB38752A889F1F00E628DA /* KeychainHelper.swift in Sources */,
+				35AB386C2A889DF000E628DA /* NetworkError.swift in Sources */,
+				35AB38832A88A77A00E628DA /* JobsListViewController.swift in Sources */,
+				35977F7E2A88C093005D9614 /* ApolloClientNetworkService.swift in Sources */,
+				35AB38652A88989E00E628DA /* BaseViewModel.swift in Sources */,
+				35AB388C2A88A8A700E628DA /* ApplicationListViewControllerViewModel.swift in Sources */,
+				35AB38792A88A23400E628DA /* AppColors.swift in Sources */,
+				35977F8E2A88C97E005D9614 /* SalaryRange.swift in Sources */,
+				35AB38A12A88AE0500E628DA /* Job.swift in Sources */,
+				35AB38802A88A76D00E628DA /* JobsListViewControllerViewModel.swift in Sources */,
+				35AB38242A88961D00E628DA /* SceneDelegate.swift in Sources */,
+				35AB38732A889EF700E628DA /* AppData.swift in Sources */,
+				35AB38992A88ADCA00E628DA /* JobTableViewCellViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		35AB382C2A88961E00E628DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35AB382D2A88961E00E628DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35AB38462A88961F00E628DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		35AB38472A88961F00E628DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35AB38492A88961F00E628DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R7C5749ZN5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftGraphQL/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faran.SwiftGraphQL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35AB384A2A88961F00E628DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R7C5749ZN5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftGraphQL/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faran.SwiftGraphQL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35AB38192A88961C00E628DA /* Build configuration list for PBXProject "SwiftGraphQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35AB38462A88961F00E628DA /* Debug */,
+				35AB38472A88961F00E628DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35AB38482A88961F00E628DA /* Build configuration list for PBXNativeTarget "SwiftGraphQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35AB38492A88961F00E628DA /* Debug */,
+				35AB384A2A88961F00E628DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		35977F792A88C04E005D9614 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		35977F7A2A88C04E005D9614 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35977F792A88C04E005D9614 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		35D8BB812A9096D000312438 /* SwiftGraphQLAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftGraphQLAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 35AB38162A88961C00E628DA /* Project object */;
+}

@@ -1,0 +1,11 @@
+query ActiveJobsQuery($page: Int) {
+  active(page: $page) {
+    hasNext
+    jobs {
+      _id
+      positionTitle
+      description
+      haveIApplied
+    }
+  }
+}
